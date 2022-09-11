@@ -1,0 +1,26 @@
+.mainContainer {
+  background-image: url('../../public/images/serviceSvg.svg');
+  background-repeat: repeat-y;
+  background-position: top right;
+  background-size: 33%;
+  overflow: hidden;
+
+  @media (max-width: 992px) {
+    background-image: url('../../public/images/mobileSvg.svg');
+  }
+}
+
+.dark.mainContainer {
+  background-color: #111827;
+}
+
+.mainCnav {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(138deg, rgba(255,255,255,1) 60%, rgba(0,0,0,0) 87%);
+
+}
+
+.dark .mainCnav {
+  background: linear-gradient(138deg, #111827 60%, rgba(0, 0, 0, 0) 87%);
+}

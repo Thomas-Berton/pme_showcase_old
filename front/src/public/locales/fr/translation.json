@@ -1,0 +1,29 @@
+{
+  "global:": {
+    "us": {
+      "name": "PME Manageur",
+      "name_split_1": "PME M",
+      "name_split_2": "anageur",
+      "know_more_about": "En savoir plus sur nous",
+      "who_are_we": "Qui sommes nous ?"
+    },
+    "know_more_about": "En savoir plus",
+    "start": "Commencer"
+  },
+  "homePage": {
+    "find_your_needs": "Trouvez la solution informatique qui correspond à vos besoins !",
+    "only_few_click": "En quelques clics avec",
+    "here_for_your_projects": "A l'écoute pour vos projets numériques",
+    "here_for_your_projects_txt": "Chez PME Manageur, nos équipes sont à l'écoute du clients, car c'est en étant au plus prés de votre activité que nous pourrons vous proposer les meilleurs outils pour votre developpemet numérique.",
+    "our_tech": "Des solutions à la pointe de la technologie",
+    "our_tech_txt": "Dans un monde aussi innovant que le numérique, chez Pme Manageur nous nous efforçons de rester à jour des dernieres technologies et de former nos équipes aux défis de demains.",
+    "they_trust_us" : "Ils nous ont fait confiance"
+
+  },
+  "contactPage": {
+      
+  },
+  "layout":{
+    "contact_us":"Contact"
+  }
+}

@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.glide__slide:hover,
+.glide__slide--active:hover {
+  transform: none !important;
+}
+
+.pmeE {
+  text-decoration: underline !important;
+  text-decoration-color: #facc15 !important ;
+}
+.imgEquipe {
+  transform: translate(-50%, -50px);
+
+  @media (max-width: 640px) {
+    transform: translate(-33%, -33%);
+  }
+}
+
+.ekipText {
+  font-size: 26px;
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+.glide__slides {
+  padding: 20px !important;
+  padding-right: 40px !important;
+}
+
+.glide__slideCard {
+  align-items: center;
+}
+
+.boxLogo {
+  height: 78px;
+  object-fit: contain;
+
+  @media (max-width: 992px) {
+    height: 64px;
+  }
+}
+
+h1.title, h2.title, h3.title {
+  font-family: Raleway;
+  font-size: 58px;
+  font-weight: 800;
+  text-align: center;
+
+  @media (max-width: 640px) {
+    font-size: 42px;
+  }
+}
+
+p.titleYellow {
+  font-size: 24px;
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+.slider__arrow {
+  color: #181818;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+  z-index: 11;
+  width: 48px;
+  height: 48px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 58.85%);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-box-shadow: 0 0.5rem 4rem 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0.5rem 4rem 0 rgb(0 0 0 / 50%);
+
+  @media (max-width: 640px) {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+}
+
+.slider__arrow:hover {
+  color: #fff;
+  background: #323232;
+}
+
+.slider__arrow__prev {
+  left: -3%;
+}
+
+.slider__arrow__next {
+  right: -3%;
+}
+
+.card {
+  position: relative;
+  width: 348px;
+  height: 707px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1280px) {
+    width: 300px;
+  }
+
+  .username {
+    font-size: 32px;
+    font-family: Raleway;
+  }
+
+  .cardInfoRow {
+    font-size: 13px;
+  }
+
+  .cardInfoRowIcon {
+    width: 34px;
+    height: 34px;
+    background-color: #F3CF0E;
+  }
+
+  .aboutMe {
+    h4 {
+      width: fit-content;
+      position: relative;
+      font-family: Raleway;
+      font-size: 20px;
+      z-index: 10;
+    }
+
+    h4::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      height: 8px;
+      bottom: 4px;
+      left: -6px;
+      right: -6px;
+      border-radius: 9999px;
+      background-color: #F3CF0E;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.cardLeft {
+  background-color: #F3CF0E;
+
+
+  .aboutMe {
+    clip-path: polygon(0% 50%, 100% 20%, 100% 100%, 0% 100%);
+    padding-top: 60%;
+    padding-bottom: 2rem;
+    background-color: #EFEFEF;
+  }
+
+  img.pmeLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  img:not(.pmeLogo) {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    right: -25px;
+    top: 20%;
+  }
+}
+
+
+.cardRight {
+  background-color: #F3CF0E;
+  .aboutMe {
+    clip-path: polygon(0% 20%, 100% 50%, 100% 100%, 0% 100%);
+    padding-top: 60%;
+    padding-bottom: 2rem;
+    background-color: #EFEFEF;
+  }
+
+  img.pmeLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  img:not(.pmeLogo) {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    left: -25px;
+    top: 20%;
+  }
+}
+
+.cardCenter {
+  img:not(.logoCard) {
+    clip-path: circle(100% at 50% 0);
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+
+  img.logoCard {
+    width: 50px;
+    height: 50px;
+    top: 35%;
+
+    @media (max-width: 1280px) {
+      top: 33%;
+    }
+  }
+
+  .username {
+    font-size: 22px;
+    top: 28%;
+
+    @media (max-width: 1280px) {
+      top: 25%;
+    }
+  }
+}
+
+.cardCenter::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 76%;
+  background-color: #EFEFEF;
+}
+
+.glideTrackCard {
+  border-radius: 15px;
+}
+
+.cardSlider {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #F3CF0E;
+  position: relative;
+
+
+
+  .username {
+    font-size: 24px;
+    font-family: Raleway;
+    margin-right: 70%
+  }
+
+  .aboutMe::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 133%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #EFEFEF;
+  }
+
+  .aboutMe {
+    z-index: 9;
+    position: relative;
+    h4 {
+      width: fit-content;
+      position: relative;
+      font-family: Raleway;
+      font-size: 20px;
+      z-index: 10;
+    }
+
+    h4::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      height: 8px;
+      bottom: 4px;
+      left: -6px;
+      right: -6px;
+      border-radius: 9999px;
+      background-color: #fff;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .cardInfo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    .cardInfoRow {
+      font-size: 13px;
+    }
+  
+    .cardInfoRowIcon {
+      width: 34px;
+      height: 34px;
+      background-color: #F3CF0E;
+
+      @media (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  
+
+  img {
+    width: 40%;
+    object-fit: cover;
+    position: absolute;
+    right: -1.5rem;
+    top: 1.5rem;
+
+    @media (max-width: 768px) {
+      top: 3rem;
+      right: -1rem;
+    }
+  }
+
+  .pmeLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  p {
+    white-space: break-spaces;
+  }
+}
+
+.sectionTitle {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.sectionTitleMobile {
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}

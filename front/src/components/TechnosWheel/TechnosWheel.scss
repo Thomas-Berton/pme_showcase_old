@@ -1,0 +1,686 @@
+.img-c {
+  display: block;
+}
+
+.polygon {
+  clip-path: polygon(-1% 0, 100% 100%, 100% 0);
+}
+
+.technologies {
+  .technos {
+    position: relative;
+    width: 18em;
+    height: 18em;
+    padding: 2.8em;
+    border-radius: 50%;
+    animation: rotating 30s linear infinite;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 9em;
+      height: 9em;
+      margin: -4.5em;
+      cursor: pointer;
+    }
+
+    a:hover {
+      border-radius: 9999px;
+      transition: 250ms;
+      width: 10em;
+      height: 10em;
+      margin: -5em;
+      transition-property: padding, width, height, margin;
+    }
+
+    a:hover img {
+      object-fit: contain;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      animation: anti-rotating 30s linear infinite;
+    }
+
+    .center {
+      // width: 12em;
+      // height: 12em;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 1000px;
+      height: 1000px;
+      // background-color: #111827;
+      box-shadow: 0px 0px 20px 7px #11182757;
+
+      // border: solid 200px #111827;
+
+      @media (max-width: 576px) {
+        width: 7em;
+        height: 7em;
+      }
+
+      img {
+        width: 100% !important;
+        height: 60%;
+        width: 60% !important;
+      }
+    }
+
+    .deg0 {
+      transform: translate(25em);
+    }
+
+    .deg30 {
+      transform: rotate(30deg) translate(25em) rotate(-30deg);
+    }
+
+    .deg60 {
+      transform: rotate(60deg) translate(25em) rotate(-60deg);
+    }
+
+    .deg45 {
+      transform: rotate(45deg) translate(25em) rotate(-45deg);
+    }
+
+    .deg90 {
+      transform: rotate(90deg) translate(25em) rotate(-90deg);
+    }
+
+    .deg120 {
+      transform: rotate(120deg) translate(25em) rotate(-120deg);
+    }
+
+    .deg135 {
+      transform: rotate(135deg) translate(25em) rotate(-135deg);
+    }
+
+    .deg150 {
+      transform: rotate(150deg) translate(25em) rotate(-150deg);
+    }
+
+    .deg180 {
+      transform: translate(-25em);
+    }
+
+    .deg210 {
+      transform: rotate(210deg) translate(25em) rotate(-210deg);
+    }
+
+    .deg225 {
+      transform: rotate(225deg) translate(25em) rotate(-225deg);
+    }
+
+    .deg240 {
+      transform: rotate(240deg) translate(25em) rotate(-240deg);
+    }
+
+    .deg270 {
+      transform: rotate(270deg) translate(25em) rotate(-270deg);
+    }
+
+    .deg300 {
+      transform: rotate(300deg) translate(25em) rotate(-300deg);
+    }
+
+    .deg315 {
+      transform: rotate(315deg) translate(25em) rotate(-315deg);
+    }
+
+    .deg330 {
+      transform: rotate(330deg) translate(25em) rotate(-330deg);
+    }
+
+    .deg360 {
+      transform: rotate(360deg) translate(25em) rotate(-360deg);
+    }
+  }
+
+  position: absolute;
+  z-index: 49;
+  // right: -13%;
+  top: 0px;
+}
+
+.pme-link {
+  width: fit-content;
+}
+
+.btn-demo {
+  box-shadow: 0 0 0 0 #047857;
+  transform: scale(3);
+  animation: customPulse 3s infinite;
+}
+
+// #demobtnzone {
+//     background: rgb(255,255,255);
+// background: linear-gradient(146deg, rgba(255,255,255,1) 48%, rgba(17,24,39,1) 91%);
+// }
+
+.demo {
+  text-shadow: -1px -1px 0 rgb(0 0 0 / 20%), 1px -1px 0 rgb(0 0 0 / 20%),
+    -1px 1px 0 rgb(0 0 0 / 20%), 1px 1px 0 rgb(4, 120, 87 / 0.7);
+}
+
+@media (max-width: 1260px) {
+  .technologies .technos {
+    .center {
+      width: 900px;
+      height: 900px;
+    }
+
+    .deg0 {
+      transform: translate(23em);
+    }
+
+    .deg30 {
+      transform: rotate(30deg) translate(23em) rotate(-30deg);
+    }
+
+    .deg60 {
+      transform: rotate(60deg) translate(23em) rotate(-60deg);
+    }
+
+    .deg45 {
+      transform: rotate(45deg) translate(23em) rotate(-45deg);
+    }
+
+    .deg90 {
+      transform: rotate(90deg) translate(23em) rotate(-90deg);
+    }
+
+    .deg120 {
+      transform: rotate(120deg) translate(23em) rotate(-120deg);
+    }
+
+    .deg135 {
+      transform: rotate(135deg) translate(23em) rotate(-135deg);
+    }
+
+    .deg150 {
+      transform: rotate(150deg) translate(23em) rotate(-150deg);
+    }
+
+    .deg180 {
+      transform: translate(-23em);
+    }
+
+    .deg210 {
+      transform: rotate(210deg) translate(23em) rotate(-210deg);
+    }
+
+    .deg225 {
+      transform: rotate(225deg) translate(23em) rotate(-225deg);
+    }
+
+    .deg240 {
+      transform: rotate(240deg) translate(23em) rotate(-240deg);
+    }
+
+    .deg270 {
+      transform: rotate(270deg) translate(23em) rotate(-270deg);
+    }
+
+    .deg300 {
+      transform: rotate(300deg) translate(23em) rotate(-300deg);
+    }
+
+    .deg315 {
+      transform: rotate(315deg) translate(23em) rotate(-315deg);
+    }
+
+    .deg330 {
+      transform: rotate(330deg) translate(23em) rotate(-330deg);
+    }
+
+    .deg360 {
+      transform: rotate(360deg) translate(23em) rotate(-360deg);
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .technologies .technos {
+    .center {
+      width: 800px;
+      height: 800px;
+    }
+
+    a.techElem {
+      width: 8em;
+      height: 8em;
+      margin: -4em;
+    }
+
+    .deg0 {
+      transform: translate(20em);
+    }
+
+    .deg30 {
+      transform: rotate(30deg) translate(20em) rotate(-30deg);
+    }
+
+    .deg60 {
+      transform: rotate(60deg) translate(20em) rotate(-60deg);
+    }
+
+    .deg45 {
+      transform: rotate(45deg) translate(20em) rotate(-45deg);
+    }
+
+    .deg90 {
+      transform: rotate(90deg) translate(20em) rotate(-90deg);
+    }
+
+    .deg120 {
+      transform: rotate(120deg) translate(20em) rotate(-120deg);
+    }
+
+    .deg135 {
+      transform: rotate(135deg) translate(20em) rotate(-135deg);
+    }
+
+    .deg150 {
+      transform: rotate(150deg) translate(20em) rotate(-150deg);
+    }
+
+    .deg180 {
+      transform: translate(-20em);
+    }
+
+    .deg210 {
+      transform: rotate(210deg) translate(20em) rotate(-210deg);
+    }
+
+    .deg225 {
+      transform: rotate(225deg) translate(20em) rotate(-225deg);
+    }
+
+    .deg240 {
+      transform: rotate(240deg) translate(20em) rotate(-240deg);
+    }
+
+    .deg270 {
+      transform: rotate(270deg) translate(20em) rotate(-270deg);
+    }
+
+    .deg300 {
+      transform: rotate(300deg) translate(20em) rotate(-300deg);
+    }
+
+    .deg315 {
+      transform: rotate(315deg) translate(20em) rotate(-315deg);
+    }
+
+    .deg330 {
+      transform: rotate(330deg) translate(20em) rotate(-330deg);
+    }
+
+    .deg360 {
+      transform: rotate(360deg) translate(20em) rotate(-360deg);
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .technologies .technos {
+    .center {
+      width: 700px;
+      height: 700px;
+    }
+
+    a.techElem {
+      width: 7em;
+      height: 7em;
+      margin: -3.5em;
+    }
+
+    .deg0 {
+      transform: translate(17.5em);
+    }
+
+    .deg30 {
+      transform: rotate(30deg) translate(17.5em) rotate(-30deg);
+    }
+
+    .deg60 {
+      transform: rotate(60deg) translate(17.5em) rotate(-60deg);
+    }
+
+    .deg45 {
+      transform: rotate(45deg) translate(17.5em) rotate(-45deg);
+    }
+
+    .deg90 {
+      transform: rotate(90deg) translate(17.5em) rotate(-90deg);
+    }
+
+    .deg120 {
+      transform: rotate(120deg) translate(17.5em) rotate(-120deg);
+    }
+
+    .deg135 {
+      transform: rotate(135deg) translate(17.5em) rotate(-135deg);
+    }
+
+    .deg150 {
+      transform: rotate(150deg) translate(17.5em) rotate(-150deg);
+    }
+
+    .deg180 {
+      transform: translate(-17.5em);
+    }
+
+    .deg210 {
+      transform: rotate(210deg) translate(17.5em) rotate(-210deg);
+    }
+
+    .deg225 {
+      transform: rotate(225deg) translate(17.5em) rotate(-225deg);
+    }
+
+    .deg240 {
+      transform: rotate(240deg) translate(17.5em) rotate(-240deg);
+    }
+
+    .deg270 {
+      transform: rotate(270deg) translate(17.5em) rotate(-270deg);
+    }
+
+    .deg300 {
+      transform: rotate(300deg) translate(17.5em) rotate(-300deg);
+    }
+
+    .deg315 {
+      transform: rotate(315deg) translate(17.5em) rotate(-315deg);
+    }
+
+    .deg330 {
+      transform: rotate(330deg) translate(17.5em) rotate(-330deg);
+    }
+
+    .deg360 {
+      transform: rotate(360deg) translate(17.5em) rotate(-360deg);
+    }
+  }
+}
+
+
+
+@media (max-width: 780px) {
+  .technologies .technos {
+    .center {
+      width: 600px;
+      height: 600px;
+    }
+
+    a.techElem {
+      width: 6em;
+      height: 6em;
+      margin: -3em;
+    }
+
+    .deg0 {
+      transform: translate(15em);
+    }
+
+    .deg30 {
+      transform: rotate(30deg) translate(15em) rotate(-30deg);
+    }
+
+    .deg60 {
+      transform: rotate(60deg) translate(15em) rotate(-60deg);
+    }
+
+    .deg45 {
+      transform: rotate(45deg) translate(15em) rotate(-45deg);
+    }
+
+    .deg90 {
+      transform: rotate(90deg) translate(15em) rotate(-90deg);
+    }
+
+    .deg120 {
+      transform: rotate(120deg) translate(15em) rotate(-120deg);
+    }
+
+    .deg135 {
+      transform: rotate(135deg) translate(15em) rotate(-135deg);
+    }
+
+    .deg150 {
+      transform: rotate(150deg) translate(15em) rotate(-150deg);
+    }
+
+    .deg180 {
+      transform: translate(-15em);
+    }
+
+    .deg210 {
+      transform: rotate(210deg) translate(15em) rotate(-210deg);
+    }
+
+    .deg225 {
+      transform: rotate(225deg) translate(15em) rotate(-225deg);
+    }
+
+    .deg240 {
+      transform: rotate(240deg) translate(15em) rotate(-240deg);
+    }
+
+    .deg270 {
+      transform: rotate(270deg) translate(15em) rotate(-270deg);
+    }
+
+    .deg300 {
+      transform: rotate(300deg) translate(15em) rotate(-300deg);
+    }
+
+    .deg315 {
+      transform: rotate(315deg) translate(15em) rotate(-315deg);
+    }
+
+    .deg330 {
+      transform: rotate(330deg) translate(15em) rotate(-330deg);
+    }
+
+    .deg360 {
+      transform: rotate(360deg) translate(15em) rotate(-360deg);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .technologies {
+    top: -83%;
+  }
+
+  .technologies .technos {
+    .center {
+      width: 450px;
+      height: 450px;
+    }
+
+    a.techElem {
+      width: 4.5em;
+      height: 4.5em;
+      margin: -2.25em;
+    }
+
+    .deg0 {
+      transform: translate(11.25em);
+    }
+
+    .deg30 {
+      transform: rotate(30deg) translate(11.25em) rotate(-30deg);
+    }
+
+    .deg60 {
+      transform: rotate(60deg) translate(11.25em) rotate(-60deg);
+    }
+
+    .deg45 {
+      transform: rotate(45deg) translate(11.25em) rotate(-45deg);
+    }
+
+    .deg90 {
+      transform: rotate(90deg) translate(11.25em) rotate(-90deg);
+    }
+
+    .deg120 {
+      transform: rotate(120deg) translate(11.25em) rotate(-120deg);
+    }
+
+    .deg135 {
+      transform: rotate(135deg) translate(11.25em) rotate(-135deg);
+    }
+
+    .deg150 {
+      transform: rotate(150deg) translate(11.25em) rotate(-150deg);
+    }
+
+    .deg180 {
+      transform: translate(-11.25em);
+    }
+
+    .deg210 {
+      transform: rotate(210deg) translate(11.25em) rotate(-210deg);
+    }
+
+    .deg225 {
+      transform: rotate(225deg) translate(11.25em) rotate(-225deg);
+    }
+
+    .deg240 {
+      transform: rotate(240deg) translate(11.25em) rotate(-240deg);
+    }
+
+    .deg270 {
+      transform: rotate(270deg) translate(11.25em) rotate(-270deg);
+    }
+
+    .deg300 {
+      transform: rotate(300deg) translate(11.25em) rotate(-300deg);
+    }
+
+    .deg315 {
+      transform: rotate(315deg) translate(11.25em) rotate(-315deg);
+    }
+
+    .deg330 {
+      transform: rotate(330deg) translate(11.25em) rotate(-330deg);
+    }
+
+    .deg360 {
+      transform: rotate(360deg) translate(11.25em) rotate(-360deg);
+    }
+  }
+}
+
+
+@keyframes customPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(4, 120, 87, 0.7);
+  }
+
+  20% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 20px rgba(239, 200, 17, 0);
+  }
+
+  40% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 200, 17, 0);
+  }
+
+  60% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 20px rgba(239, 200, 17, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 200, 17, 0);
+  }
+}
+
+@media (min-width: 1800px) {
+  div.technologies#technologies {
+    right: 4rem !important;
+  }
+}
+
+@media (max-width: 1008px) {
+  .img-c {
+    margin: auto;
+    height: 299px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pme-link {
+    padding: 0;
+
+    img {
+      margin: 0;
+      margin-right: 0.25rem;
+    }
+
+    .svg {
+      display: block;
+    }
+
+    .pme {
+      display: none;
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anti-rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,45 @@
+.Contact {
+  .contacticoncust {
+    cursor: pointer;
+    svg {
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      svg {
+        transform: scale(1.15);
+      }
+    }
+  }
+  .pmeE {
+    text-decoration: underline !important;
+    text-decoration-color: #facc15 !important ;
+  }
+  p.titleYellow {
+    font-size: 24px;
+
+    @media (max-width: 640px) {
+      font-size: 18px;
+    }
+  }
+
+  h1.title,
+  h2.title,
+  h3.title {
+    font-family: Raleway;
+    font-size: 58px;
+    font-weight: 800;
+    text-align: center;
+
+    @media (max-width: 640px) {
+      font-size: 42px;
+    }
+  }
+
+  .imgEquipe {
+    transform: translate(-50%, -50px);
+
+    @media (max-width: 640px) {
+      transform: translate(-33%, -33%);
+    }
+  }
+}

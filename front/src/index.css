@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.dark .textShadow,
+.dark .bigText {
+  text-shadow: #212121 1px 0 10px;
+}
+
+.notfound {
+  font-family: Raleway;
+}
+
+.raleway {
+  font-family: Raleway;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  /* -webkit-text-fill-color: #fbbf24; */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+._button {
+  @apply block text-yellow-300 border border-yellow-300 font-medium tracking-wider w-full h-10 leading-10 text-center bg-transparent relative overflow-hidden;
+}
+
+.signin {
+  @apply mr-1;
+}
+
+.signup {
+  @apply ml-1;
+}
+
+._button,
+._button::after {
+  @apply transition-all duration-300;
+}
+
+._button::before,
+._button::after {
+  @apply bg-yellow-300 absolute;
+  content: "";
+  z-index: -1;
+}
+
+._button:hover {
+  color: white;
+}
+
+._button::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+._button:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+[data-aos="circle"] {
+  transform: scale(0.2);
+  vertical-align: middle;
+  clip-path: circle(25% at 50% 50%);
+  transition-property: transform;
+}
+
+[data-aos="circle"].aos-animate {
+  transform: scale(3);
+}
+
+[data-aos="circle-reverse"] {
+  transform: scale(3);
+  vertical-align: middle;
+  clip-path: circle(25% at 50% 50%);
+  transition-property: transform;
+}
+
+[data-aos="circle-reverse"].aos-animate {
+  transform: scale(0.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+  border: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #facc15;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../node_modules/aos/dist/aos.css";
+
+@import "animate.css";
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+.closeButton:hover .fa-xmark {
+  color: #fff;
+  transition: none !important;
+}
+
+/* NEW SLOOOOOOOOOOOOOOOOOT MAAAAAAAAAAAAACHINNE */
+.slotText::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  height: 8px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  border-radius: 9999px;
+  background-color: #f3cf0e;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden-force {
+  display: none !important;
+}
+
+#loader {
+  appearance: none;
+  border: none;
+  background: url(https://andyhoffman.codes/random-assets/img/slots/repeat.png)
+    transparent 0 0 no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  animation: 1s linear infinite spin;
+}
+
+.icons {
+  display: inline-block;
+  width: 128px;
+  height: 564px;
+  overflow: hidden;
+  background: #fff
+    url(https://andyhoffman.codes/random-assets/img/slots/sprite5.png) repeat-y;
+  will-change: backgroundPosition;
+  transition: 0.3s background-position ease-in-out;
+  padding: 0 80px;
+  transform: translateZ(0);
+}
+
+.icons:nth-child(2) {
+  margin: 0 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.spinner-container {
+  overflow: hidden;
+  height: 632px;
+  padding: 2em;
+  transform: scale(0.5);
+  transform-origin: top center;
+  width: fit-content;
+  display: flex;
+  transition: 0.3s transform;
+}
+
+.app-wrap.winner-false {
+  animation: linear 1s spin;
+}
+
+.spinner-container::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  left: 30px;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.gradient-fade {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  bottom: 32px;
+  left: 32px;
+}
+
+.relief::after {
+  z-index: -2;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  top: 5px;
+  left: 5px;
+}
+
+.relief::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+}
+
+.dark .relief::before {
+  background-color: rgb(31 41 55);
+}
+
+.dark .relief::after {
+  background-color: #fde045;
+}
+
+.glide__slide--active .glide__container {
+  transform: perspective(1500px) rotateY(0deg) !important;
+}
+
+.dark .cardCenter::after {
+  background-color: #323232;
+}
+
+.dark .cardLeft .aboutMe,
+.dark .cardRight .aboutMe {
+  background-color: #323232;
+}
+
+.dark .dark__arrow {
+  background: #1c1917;
+  color: #fff;
+}
+
+.dark .aboutMe h4::after {
+  background-color: #212121;
+}
+
+.dark .aboutMe::after {
+  background-color: #323232;
+}
+
+@media screen and (max-width: 768px) {
+  .relief {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .spinner-container {
+    transform-origin: top;
+  }
+
+  #loader {
+    width: 24px;
+    height: 24px;
+  }
+}

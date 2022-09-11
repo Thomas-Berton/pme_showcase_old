@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_services_services",
+  "info": {
+    "displayName": "service",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "isMainService": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,352 @@
+.partnerImg {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.spliterStyle {
+  left: -10%;
+  top: -24%;
+  transform: rotate(348deg);
+  box-shadow: inset 0px 20px 18px 0px #00000066;
+  width: 130%;
+}
+.spliterStyle2 {
+  transform: rotate(-348deg);
+  width: 140%;
+  margin-left: -10rem;
+}
+
+.spliterStyle2 > div > img {
+  transform: rotate(348deg) translateY(-52%);
+  width: 80%;
+}
+
+.PImg {
+  height: 3rem;
+}
+
+.imgBot {
+  clip-path: polygon(0 0, 100% 93%, 100% 100%, 0% 100%);
+
+  @media (max-width: 1100px) {
+    .imgBot {
+      clip-path: polygon(0 0, 100% 93%, 100% 100%, 0% 100%);
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .polygonBot {
+    clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 100% 66%) !important;
+  }
+}
+
+@media (max-width: 980px) {
+  div.polygonBot {
+    clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 100% 50%) !important;
+  }
+}
+
+.yoo,
+.yooo {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.yoo:hover {
+  padding-left: 100%;
+  background-color: transparent;
+}
+
+.yooo:hover {
+  padding-right: 100%;
+  background-color: transparent;
+}
+
+.partnerImg:hover {
+  -webkit-filter: none;
+  transform: scale(1.1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.bigText {
+  text-shadow: #d7d7d7 1px 0 10px;
+}
+
+.glideSlides {
+  padding: 1rem 0 !important;
+}
+
+.btnSteps {
+    animation: pulse 2s infinite;
+}
+
+.btnStepsY {
+  animation: pulseY 2s infinite;
+}
+
+.textShadow {
+  text-shadow: #d7d7d7 1px 0 10px;
+}
+
+.stepContainer {
+  .step1 {
+    background-image: url("../../public/images/step1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+
+    @media (max-width: 1024px) {
+      background-image: none;
+    }
+  }
+
+  .step1mobile {
+    font-family: 'Racing Sans One';
+    padding: 2rem 0;
+    @media (max-width: 1024px) {
+      background-image: url("../../public/images/step1mobile.svg");
+      background-repeat: no-repeat;
+      background-size: 10%;
+      background-position: 18% center;
+    }
+
+    @media (max-width: 768px) {
+      background-position: 0% center;
+    }
+
+    @media (max-width: 640px) {
+      background-size: 15%;
+    }
+  }
+
+  .step2 {
+    background-image: url("../../public/images/step2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    
+    @media (max-width: 1024px) {
+      background-image: none;
+    }
+
+    img {
+      animation: movebounce 5s linear infinite;
+    }
+  }
+
+  .step2mobile {
+    font-family: 'Racing Sans One';
+    padding: 2rem 0;
+    @media (max-width: 1024px) {
+      background-image: url("../../public/images/step2mobile.svg");
+      background-repeat: no-repeat;
+      background-size: 10%;
+      background-position: 88% center;
+    }
+
+    @media (max-width: 768px) {
+      background-position: 100% center;
+    }
+    
+    @media (max-width: 640px) {
+      background-size: 15%;
+    }
+  }
+
+  .step3 {
+    background-image: url("../../public/images/step3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+
+    @media (max-width: 1024px) {
+      background-image: none;
+    }
+  }
+
+  .step3mobile {
+    font-family: 'Racing Sans One';
+    @media (max-width: 1024px) {
+      padding: 2rem 0;
+      background-image: url("../../public/images/step3mobile.svg");
+      background-repeat: no-repeat;
+      background-size: 10%;
+      background-position: 8% center;
+    }
+
+    @media (max-width: 768px) {
+      background-position: 0% center;
+    }
+    
+    @media (max-width: 640px) {
+      background-size: 15%;
+    }
+  }
+
+  .step4 {
+    h2 {
+      font-family: 'Racing Sans One';
+    }
+    background-image: url("../../public/images/step4.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: top center;
+  }
+}
+
+@keyframes movebounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(17, 24, 39, 0.7);
+  }
+
+  50% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(17, 24, 39, 0);
+  }
+
+  100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(17, 24, 39, 0);
+  }
+}
+
+@keyframes pulseY {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7);
+  }
+
+  50% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(250, 204, 21, 0);
+  }
+
+  100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+  }
+}
+
+@media (min-width: 1260px) {
+  .spliterStyle {
+    height: 600px;
+    top: -28%;
+  }
+}
+
+@media (min-width: 1820px) {
+  .spliterStyle {
+    height: 600px;
+    top: -28%;
+  }
+}
+
+@media (min-width: 1520px) {
+  // .spliterStyle2 {
+  //   height: 550px;
+  //   bottom: 0rem;
+  // }
+}
+.slider__arrow {
+  color: #181818;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+  z-index: 11;
+  width: 48px;
+  height: 48px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 58.85%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 0.5rem 4rem 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0.5rem 4rem 0 rgb(0 0 0 / 50%);
+
+  @media (max-width: 640px) {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+}
+
+.boxLogo {
+  height: 78px;
+  object-fit: contain;
+
+  @media (max-width: 992px) {
+    height: 64px;
+  }
+}
+.glide__slide:hover,
+.glide__slide--active:hover {
+  transform: none !important;
+}
+
+.slider__arrow:hover {
+  color: #fff;
+  background: #323232;
+}
+
+.slider__arrow__prev {
+  left: -3%;
+}
+
+.slider__arrow__next {
+  right: -3%;
+}
+
+.imgEquipe {
+  transform: translate(-50%, -50px);
+
+  @media (max-width: 640px) {
+    transform: translate(-33%, -33%);
+  }
+}
+
+.ekipText {
+  font-size: 26px;
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+p.titleYellow {
+  font-size: 24px;
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+h1.title,
+h2.title,
+h3.title {
+  font-family: Raleway;
+  font-size: 58px;
+  font-weight: 800;
+  text-align: center;
+
+  @media (max-width: 640px) {
+    font-size: 42px;
+  }
+}
